@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Light grey background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333; /* Dark grey text color */
+    background-color: #fff; /* White background */
+    border: 2px solid #ccc; /* Light grey border */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+a:hover {
+    background-color: #007bff; /* Blue color on hover */
+    border-color: #007bff; /* Blue border on hover */
+    color: #fff; /* White text on hover */
+}

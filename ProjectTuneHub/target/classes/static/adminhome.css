@@ -1,0 +1,34 @@
+p {
+	text-align: center; /* Align text to the center */
+	color: #333; /* Example color */
+	font-weight: bold;
+	font-style: oblique;
+}
+
+input[type="submit"] {
+	display: block;
+	margin: 0 auto;
+	background-color: #cd87c0;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	border: 1px;
+}
+
+form {
+	border: 3px solid #ffc4ff; /* Border style */
+	padding: 10px; /* Padding to give some space inside the border */
+	width: 80px; /* Optional: Set the width of the form */
+	margin: 0 auto; /* Optional: Center the form horizontally */
+	background-color: #ffccff; /* Background color for the form */
+	border-radius: 5px; /* Rounded corners for the form */
+}
+
+body {
+	
+	background-color: #ffd9ff;
+	
+	
+}

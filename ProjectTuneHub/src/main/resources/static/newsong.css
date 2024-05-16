@@ -1,0 +1,47 @@
+/* CSS code to apply border and color */
+form {
+    border: 3px solid #ffc4ff; /* Border style */
+    padding: 20px; /* Padding to give some space inside the border */
+    width: 300px; /* Optional: Set the width of the form */
+    margin: 0 auto; /* Optional: Center the form horizontally */
+    background-color: #ffccff; /* Background color for the form */
+    border-radius: 30px; /* Rounded corners for the form */
+}
+
+label {
+    display: block; /* Make labels appear on separate lines */
+    margin-bottom: 10px; /* Add some space between labels */
+    color: #333; /* Label text color */
+}
+
+input[type="text"] {
+    width: calc(100% - 20px); /* Make text inputs fill the entire width of their container */
+    padding: 10px; /* Add some padding to text inputs */
+    margin-bottom: 15px; /* Add some space between inputs */
+    border: 1px solid #ccc; /* Border color for text inputs */
+    border-radius: 20px; /* Rounded corners for text inputs */
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus {
+    border-color: #888; /* Border color on hover and focus */
+}
+
+input[type="submit"] {
+    background-color: violet; /* Background color for the submit button */
+    color: white; /* Text color for the submit button */
+    padding: 10px 20px; /* Add padding to the submit button */
+    border: none; /* Remove the default button border */
+    border-radius: 5px; /* Rounded corners for the submit button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+input[type="submit"]:hover {
+    background-color: #8b008b; /* Darker violet color on hover */
+}
+
+body{
+	
+	
+	background-color: #ffd2da;
+}

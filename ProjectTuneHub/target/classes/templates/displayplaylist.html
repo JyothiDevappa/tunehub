@@ -1,0 +1,104 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>PlayList</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/displayplaylist.css}">
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="all:${allplaylist}">
+                <td th:text="${all.id}"></td>
+                <td>
+                    <ul>
+                        <li th:each="song:${all.songs}">
+                            <span th:text="${song != null ? song.name : ''}"></span>
+                            <audio controls>
+                                <source th:src="${song.link}">
+                            </audio> 
+                        </li>
+                    </ul> 
+                </td>			
+            </tr>
+        </tbody>
+        
+        
+        
+    </table>
+</body>
+</html>
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PlayList</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/displayplaylist.css}">
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="all:${allplaylist}">
+                <td th:text="${all.id}"></td>
+                <td class="name-column"> <!-- Add class for styling -->
+                   <!--  <ul>
+                        <li th:each="song:${all.songs}">
+                            <span th:text="${song != null ? song.name : ''}"></span>
+                            <audio controls>
+                                <source th:src="${song.link}">
+                            </audio> 
+                        </li>
+                    </ul>  -->
+                    <ul class="song-list">
+    <li th:each="song : ${all.songs}">
+        <span class="song-name" th:text="${song != null ? song.name : ''}"></span>
+        <audio class="audio-player" controls>
+            <source th:src="${song.link}">
+        </audio>
+    </li>
+</ul>
+                    
+                </td>			
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
